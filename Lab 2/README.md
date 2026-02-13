@@ -18,6 +18,7 @@ Lab 2/
 ├── plugins/                 # Custom Airflow plugins (empty)
 ├── working_data/            # Mounted volume for input/output files
 └── .env                     # Environment variables (AIRFLOW_UID)
+```
 
 ## 3. Prerequisites
 ```markdown
@@ -39,11 +40,13 @@ This project uses the official **Apache Airflow 2.9.1** Docker image.
 Ensure you are in the project directory and your `.env` file is set up with your user ID:
 ```bash
 echo "AIRFLOW_UID=$(id -u)" > .env
+```
 
 ### 2. Initialize Airflow
 Run the initialization command to set up the database and create the default user (`airflow` / `airflow`):
 ```bash
 docker compose up airflow-init
+```
 
 ### Start the Services
 ```markdown
@@ -51,7 +54,7 @@ docker compose up airflow-init
 Launch the Airflow Webserver and Scheduler:
 ```bash
 docker compose up
-
+```
 ## 6. Usage & Running the Pipeline
 ```markdown
 ## Usage
