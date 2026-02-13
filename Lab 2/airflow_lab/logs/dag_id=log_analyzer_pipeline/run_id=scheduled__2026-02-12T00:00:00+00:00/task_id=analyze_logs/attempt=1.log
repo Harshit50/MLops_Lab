@@ -1,0 +1,19 @@
+[2026-02-13T04:48:11.939+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-13T04:48:11.953+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: log_analyzer_pipeline.analyze_logs scheduled__2026-02-12T00:00:00+00:00 [queued]>
+[2026-02-13T04:48:11.956+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: log_analyzer_pipeline.analyze_logs scheduled__2026-02-12T00:00:00+00:00 [queued]>
+[2026-02-13T04:48:11.956+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-13T04:48:11.960+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): analyze_logs> on 2026-02-12 00:00:00+00:00
+[2026-02-13T04:48:11.969+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'log_analyzer_pipeline', 'analyze_logs', 'scheduled__2026-02-12T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/analyzer.py', '--cfg-path', '/tmp/tmplds0feg1']
+[2026-02-13T04:48:11.970+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask analyze_logs
+[2026-02-13T04:48:11.970+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=217) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-13T04:48:11.971+0000] {standard_task_runner.py:63} INFO - Started process 218 to run task
+[2026-02-13T04:48:11.990+0000] {task_command.py:426} INFO - Running <TaskInstance: log_analyzer_pipeline.analyze_logs scheduled__2026-02-12T00:00:00+00:00 [running]> on host c00a8cec9e61
+[2026-02-13T04:48:12.022+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='log_analyzer_pipeline' AIRFLOW_CTX_TASK_ID='analyze_logs' AIRFLOW_CTX_EXECUTION_DATE='2026-02-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-12T00:00:00+00:00'
+[2026-02-13T04:48:12.023+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-13T04:48:12.028+0000] {logging_mixin.py:188} INFO - Analysis complete. Errors found: 5
+[2026-02-13T04:48:12.028+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-13T04:48:12.028+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-13T04:48:12.032+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=log_analyzer_pipeline, task_id=analyze_logs, run_id=scheduled__2026-02-12T00:00:00+00:00, execution_date=20260212T000000, start_date=20260213T044811, end_date=20260213T044812
+[2026-02-13T04:48:12.072+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-02-13T04:48:12.080+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-02-13T04:48:12.080+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
