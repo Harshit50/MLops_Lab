@@ -3,7 +3,14 @@
 ## 1. Overview
 This project demonstrates a fully dockerized **Extract, Transform, Load (ETL)** pipeline using **Apache Airflow**.
 
-Instead of running scripts manually, this project uses Airflow to automate the generation, analysis, and archiving of server logs. The entire infrastructure is defined in code (Infrastructure as Code) using Docker Compose, ensuring a reproducible environment without needing to install Airflow locally.
+This lab demonstrates how to build an automated data pipeline using **Apache Airflow** and **Docker**.
+
+The goal of this project is to simulate a "Log Analyzer" system. Imagine a web server that generates messy log files every day. An engineer needs to:
+1.  Check the logs for errors.
+2.  Count how many errors occurred.
+3.  Save the old logs for future reference.
+
+Instead of writing a script and running it manually every day, this project defines these steps as a **DAG (Directed Acyclic Graph)** in Airflow. This allows the process to run automatically on a schedule, handle failures gracefully, and provide a visual dashboard of the pipeline's health.
 
 ## 2. Project Structure
 The project is organized as follows:
