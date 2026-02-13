@@ -65,7 +65,7 @@ docker compose up
 ### Usage
 
 ### Accessing the UI
-1.  Open your browser and navigate to **[http://localhost:8080](http://localhost:8080)**.
+1.  Open your browser and navigate to **[http://localhost:8081](http://localhost:8081)**.
 2.  **Username**: `airflow`
 3.  **Password**: `airflow`
 
