@@ -23,7 +23,6 @@ Lab 2/
 ## 3. Prerequisites
 ```markdown
 
-```
 Before running this project, ensure you have the following installed:
 * **Docker Desktop** (Running and active)
 * **Git** (Optional, for version control)
