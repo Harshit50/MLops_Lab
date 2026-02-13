@@ -23,10 +23,12 @@ Lab 2/
 ## 3. Prerequisites
 ```markdown
 ## Prerequisites
+```
 Before running this project, ensure you have the following installed:
 * **Docker Desktop** (Running and active)
 * **Git** (Optional, for version control)
-
+```
+```
 ## 4. Architecture
 This project uses the official **Apache Airflow 2.9.1** Docker image.
 * **Executor**: LocalExecutor (Simplified for single-machine labs)
@@ -48,15 +50,11 @@ Run the initialization command to set up the database and create the default use
 docker compose up airflow-init
 ```
 
-### Start the Services
-```markdown
-```
 ### 3. Start the Services
 Launch the Airflow Webserver and Scheduler:
 ```bash
 docker compose up
 ```
-
 
 ## 6. Usage & Running the Pipeline
 ```markdown
@@ -67,28 +65,24 @@ docker compose up
 1.  Open your browser and navigate to **[http://localhost:8080](http://localhost:8080)**.
 2.  **Username**: `airflow`
 3.  **Password**: `airflow`
-```
-```
+
 ### Running the Pipeline
 1.  Find the DAG named **`log_analyzer_pipeline`**.
 2.  Toggle the switch to **Unpause** the DAG (turn it Blue).
 3.  Click the **Trigger DAG** button (Play icon) under "Actions".
-```
-```
+
 ## 7.  Tasks Description
 The pipeline consists of three sequential tasks:
 1.  **`generate_logs`**: Creates a dummy `server_logs.txt` file with random INFO, WARNING, and ERROR messages.
 2.  **`analyze_logs`**: Reads the log file, counts the number of "ERROR" entries, and writes the result to `error_report.txt`.
 3.  **`archive_logs`**: Renames the original log file with a timestamp (e.g., `server_logs_20260212.txt`) to simulate data archival.
-```
-```
+
 ## 8. Verifying Results
 To verify the pipeline ran successfully, check the `working_data/` folder on your local machine. You should see:
 
 * 📄 **`error_report.txt`**: Contains the summary of errors found.
 * 📄 **`server_logs_YYYYMMDD_...txt`**: The archived log file.
-```
-```
+
 ## Stopping the Project
 To stop the containers and save resources:
 ```bash
