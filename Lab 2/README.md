@@ -22,11 +22,13 @@ Lab 2/
 
 ## 3. Prerequisites
 ```markdown
-
+## Prerequisites
+```
 Before running this project, ensure you have the following installed:
 * **Docker Desktop** (Running and active)
 * **Git** (Optional, for version control)
-
+```
+```
 ## 4. Architecture
 This project uses the official **Apache Airflow 2.9.1** Docker image.
 * **Executor**: LocalExecutor (Simplified for single-machine labs)
