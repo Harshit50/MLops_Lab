@@ -21,9 +21,7 @@ Lab 2/
 ```
 
 ## 3. Prerequisites
-```markdown
 
-```
 Before running this project, ensure you have the following installed:
 * **Docker Desktop** (Running and active)
 * **Git** (Optional, for version control)
@@ -57,7 +55,7 @@ docker compose up
 
 ## 6. Usage & Running the Pipeline
 
-## Usage
+### Usage
 
 ### Accessing the UI
 1.  Open your browser and navigate to **[http://localhost:8080](http://localhost:8080)**.
