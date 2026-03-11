@@ -55,3 +55,4 @@ Model successfully saved as iris_dt_model.pkl inside the container.
 1. Ephemeral Containers: Unlike a web server (which runs continuously), this container is designed to execute a single task (training the model) and then gracefully shut down. In Docker Desktop, this container will show a status of Exited (0), indicating a successful, completed run without crashes.
 
 2. Dependency Management: By explicitly defining requirements.txt inside the Dockerfile, we guarantee the model trains on the exact same library versions every single time, regardless of the host machine's local Python environment.
+
