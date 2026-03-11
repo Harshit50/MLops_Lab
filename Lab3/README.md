@@ -1,10 +1,5 @@
 # Financial Distress Prediction API
 
-**Author:** Harshit Raheja  
-**Program:** MS in Data Analytics Engineering, Northeastern University  
-**Course:** MLOps  
-**Project:** FastAPI Lab Submission  
-
 ## Overview
 This project demonstrates the core principles of deploying a machine learning model using FastAPI. It features a complete pipeline: generating synthetic financial data, training a Random Forest classifier to predict corporate financial distress, serializing the model, and serving it via a RESTful API with strict input validation using Pydantic.
 
