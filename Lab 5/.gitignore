@@ -1,0 +1,12 @@
+# Environments
+tf_env/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+__pycache__/
+
+# MLflow artifacts 
+mlruns/
+*.png
+model_config.json
