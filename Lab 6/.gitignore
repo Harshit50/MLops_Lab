@@ -1,0 +1,9 @@
+# Environments
+snorkel_env/
+
+# Data
+data/
+
+# Jupyter Notebook cache
+.ipynb_checkpoints/
+__pycache__/

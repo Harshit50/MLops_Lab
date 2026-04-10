@@ -1,0 +1,6 @@
+snorkel
+pandas
+numpy
+scikit-learn
+textblob
+jupyterlab
